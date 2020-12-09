@@ -1,0 +1,25 @@
+<h2>Know of a pet needing a home?</h2>
+
+<form (submit)= "handleSubmit()">
+
+        <p *ngFor="let error of errors">{{ error }}</p>
+    
+        <div>
+            <label>Pet Name</label>
+            <input type="text" name="name" [(ngModel)]="newPet.name"> <br>
+            <label>Pet Type</label>
+            <input type="text" name="type" [(ngModel)]="newPet.type"> <br>
+            <label>Pet Description</label>
+            <input type="text" name="type" [(ngModel)]="newPet.description"> <br>
+            <label>Skills: </label> <br>
+            <label style="margin-left: 10px;">   Skill 1</label>
+            <input type="text" name="skillOne" [(ngModel)]="newPet.skillOne"> <br>
+            <label style="margin-left: 10px;">   Skill 2</label>
+            <input type="text" name="skillTwo" [(ngModel)]="newPet.skillTwo"> <br>
+            <label style="margin-left: 10px;">   Skill 3</label>
+            <input type="text" name="skillThree" [(ngModel)]="newPet.skillThree"> <br>
+            
+            <button>Add pet</button>
+            <button type="button" (click)="handleCancel()">Cancel</button>
+        </div>
+    </form>

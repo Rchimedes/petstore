@@ -1,0 +1,9 @@
+<a routerLink= "/pets">Home</a>
+
+<h2>Details about {{ pet.name }}</h2>
+
+<p> Pet type:  {{ pet.type }}</p>
+<p> Pet description:  {{ pet.description }}</p>
+<p>Pet Skills: <br> {{ pet.skillOne}} <br> {{ pet.skillTwo}} <br> {{ pet.skillThree}} <br> </p>
+
+<button (click)="deletePet(pet._id)">Adopt this pet</button>
